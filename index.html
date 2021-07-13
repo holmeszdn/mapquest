@@ -25,6 +25,10 @@
           layers: L.mapquest.tileLayer('hybrid'),
           zoom: 12
         });
+		
+		map.addControl(L.mapquest.control({ position: 'bottomright' }));
+		map.addControl(L.mapquest.satelliteControl());
+		map.addControl(L.mapquest.searchControl());
       }
     </script>
   </head>
